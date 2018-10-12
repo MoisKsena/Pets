@@ -48,6 +48,8 @@ h2 {
 }
 
 h3 {
+	padding: 0;
+	margin: 0;
 	font-family: Fira Sans;
 	font-style: 500;
 	font-size: 24px;
@@ -151,13 +153,14 @@ address {
 
 .promo__info {
 	display: inline-block;
-	margin-top: -107px;
+	margin-top: -90px;
 	padding-left: 320px;
 	padding-right: 100px;
 }
 
 .promo__header {
-	margin-top: 0;
+	margin: 0 0 10px 0;
+	padding-bottom: 35px ;
 	font-family: Fira Sans;
 	font-weight: 500;
 	font-size: 48px;
@@ -165,7 +168,7 @@ address {
 }
 
 .promo__slogan {
-	padding: 0px 5px;
+	padding: 0px;
 	margin: 0;
 	font-size: 16px;
 	letter-spacing: 0.005em;
@@ -292,17 +295,19 @@ address {
 .breeds__item {
 	display: flex;
 	width: 50%;
+	margin-top: 40px;
+	padding: 0;
 }
 
 .breeds__header {
 	font-family: Fira Sans;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 36px;
 	letter-spacing: 0.005em;
 	line-height: 40px;
 	text-align: center;
 	color: #202020;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 }
 
 .breeds__img-wrap {
@@ -320,6 +325,7 @@ address {
 
 .breeds__item-header {
 	width: 100%;
+	padding-bottom: 10px;
 	text-align: left;
 	color: #202020;
 }
@@ -330,9 +336,12 @@ address {
 	align-items: flex-start;
 	width: 300px;
 	margin: 0 auto;
+	padding: 0;
 }
 
 .breeds__desc {
+	margin: 0;
+	padding: 0;
 	font-weight: 400;
 	font-size: 16px;
 	letter-spacing: 0.005em;
@@ -344,8 +353,7 @@ address {
 .button {
 	position: relative;
 	text-decoration: none;
-	padding: 0;
-	margin: 0;
+	margin: 18px 8px;
 	padding-right: 30px;
 	display: inline-block;
 }
@@ -383,8 +391,8 @@ address {
 }
 
 .reviews__header {
-	margin-top: 0;
-	padding: 0;
+	margin: 0;
+	padding-top: 10px;
 	font: Fira Sans;
 	font-weight: 500;
 	font-size: 36px;
@@ -397,12 +405,17 @@ address {
 .reviews__item {
 	display: flex;
 	flex-flow: row nowrap;
-	margin-top: 20px;
-	padding-top: 80px;
+	margin-top: 0;
+	padding-top: 75px;
 	content: "";
 	left: 0px;
 	background-image: url(../images/“.svg);
 	background-repeat: no-repeat;
+}
+
+.reviews__feedback {
+	margin: 0;
+	padding-top: 20px;
 }
 
 .reviews__item-header {
@@ -433,7 +446,8 @@ address {
 }
 
 .reviews__img-wrap {
-	margin-left: 10px;
+	margin: 0 0 0 10px;
+	padding: 0;
 }
 
 .reviews__img {
@@ -443,8 +457,11 @@ address {
 
 .reviews__more {
 	width: 100%;
+	padding: 0;
+	margin: 25px 15px;
 	font-style: italic;
 	font-size: 16px;
+	letter-spacing: 0.008em;
 	padding-left: 50%;
 	color: #737274;
 }
@@ -469,22 +486,22 @@ address {
 	flex-wrap: wrap;
 	width: 940px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 110px 0;
 }
 
 .blog__desc {
 	display: flex;
 	flex-wrap: wrap;
-	width: 50%;
+	width: 49%;
 	margin: 0;
 	padding: 0;
 }
 
 .blog__header {
-	text-align: left;
 	margin: 0;
+	padding-top: 30px;
+	text-align: left;
 	color: #fff;
-	padding-top: 36px;
 }
 
 .blog__list {
@@ -507,28 +524,32 @@ address {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	border-radius: 15px;
+}
+
+.blog__img {
 	border-radius: 15px 15px 0 0;
 }
 
 .blog__item-header {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 16px;
 	letter-spacing: 0.005em;
 	line-height: 30px;
 	text-align: left;
 	color: #202020;
-	padding-left: 10px;
+	padding: 15px 22px;
 }
 
 .blog__text {
+	padding: 0;
+	margin: 0;
 	font-size: 16px;
 	font-weight: 600;
 	letter-spacing: 0.005em;
 	line-height: 30px;
 	text-align: left;
 	color: #737274;
-	padding: 0;
-	margin: 0;
 }
 
 .social_blog-link {
@@ -536,6 +557,7 @@ address {
 	margin: 0;
 	padding: 0;
 }
+
 
 .social__link--vk {
 	width: 26px;
@@ -575,8 +597,7 @@ address {
 
 .button--blog {
 	display: inline-block;
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding:  0 0 15px 10px;
 	margin: 0;
 	font-family: Fira Sans;
 	font-style: 500;
@@ -599,16 +620,14 @@ address {
     background-position: -5px -29px;
 }
 
-.button--blog:hover .button--blog::after {
-	width: 20px;
-    height: 14px;
+.button--blog:hover:after {
     background-position: -5px -5px;
 }
 
 .contacts {
 	display: flex;
 	margin: auto;
-	margin-top: 135px;
+	margin-top: 130px;
 	min-height: 350px;
 }
 
@@ -621,10 +640,12 @@ address {
 
 .contacts__item {
 	width: 50%;
-	padding-top: 30px;
+	padding-top: 25px;
+	margin: 0;
 }
 
 .contacts__item-header {
+	padding: 0;
 	margin: 0;
 	font-family: Fira Sans;
 	font-style: 600;
@@ -643,7 +664,8 @@ address {
 .footer {
 	width: 1024px;
 	min-height: 135px;
-	margin: 0;	
+	margin: 0;
+	padding: 0;	
 }
 
 .container__footer {
@@ -659,6 +681,7 @@ address {
 .nav-footer {
 	display: block;
 	margin: 0;
+	padding-top: 10px;
 }
 
 .nav-footer__list {
@@ -690,7 +713,8 @@ color: #510fad;
 }
 
 .social__link {
-	margin-left: 8px;
+	margin: 5px 0 0 8px;
+	padding: 0;
 }
 
 .social__link--footer-vk {
