@@ -374,8 +374,6 @@ address {
 }
 
 .button--breeds:hover:after{
-	width: 20px;
-    height: 14px;
     background-position: -5px -5px;
 }
 
