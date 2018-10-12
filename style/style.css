@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 500;
 	font-size: 24px;
 	letter-spacing: 0.005em;
@@ -220,7 +220,7 @@ address {
 
 
 .about__desc {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 	letter-spacing: 0.005em;
 	line-height: 30px;
@@ -246,22 +246,17 @@ address {
 	color: #fff;
 }
 
-.button {
-	text-decoration: none;
-	margin: 45px;
-	padding-top: 45px;
-	padding-left: 15px;
-}
-
 .button--video {
-	font: Fira Sans;
-	font-weight: 500;
+	top: 50px;
+	left: 24px;
+	font-family: Fira Sans;
+	font-weight: 400;
 	font-size: 16px;	
 	color: #ffec00;
 }
 
 .button--video:hover {
-color: #b8adc8;
+	color: #b8adc8;
 }
 
 .button::after,
@@ -273,17 +268,22 @@ color: #b8adc8;
 	background-repeat: no-repeat;
 }
 
-.button--video-arrow {
+.button--video::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	right: -16px;
 	width: 20px;
     height: 14px;
     background-position: -5px -53px;
 }
 
-.button--video-arrow:hover {
+.button--video:hover:after {
 	width: 20px;
     height: 14px;
     background-position: -5px -5px;
 }
+
 
 .breeds {
 	padding: 130px 0 100px 0;
@@ -295,7 +295,7 @@ color: #b8adc8;
 }
 
 .breeds__header {
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-weight: 500;
 	font-size: 36px;
 	letter-spacing: 0.005em;
@@ -340,10 +340,6 @@ color: #b8adc8;
 	color: #737274;
 }
 
-.button--breeds__link {
-	display: flex;
-	align-items: center;
-}
 
 .button {
 	position: relative;
@@ -371,24 +367,24 @@ color: #b8adc8;
 	content: "";
 	position: absolute;
 	top: 0px;
-	right: 0px;
+	right: -5px;
 	width: 20px;
     height: 14px;
     background-position: -5px -29px;
 }
 
-.button--breeds:hover .button--breeds::after {
-	width: 20px;
-    height: 14px;
+.button--breeds:hover:after{
     background-position: -5px -5px;
 }
 
 .reviews {
-	margin: 0;
+	margin-top: 30px;
 	padding: 0;
 }
 
 .reviews__header {
+	margin-top: 0;
+	padding: 0;
 	font: Fira Sans;
 	font-weight: 500;
 	font-size: 36px;
@@ -401,12 +397,19 @@ color: #b8adc8;
 .reviews__item {
 	display: flex;
 	flex-flow: row nowrap;
-	padding-top: 75px;
+	margin-top: 20px;
+	padding-top: 80px;
+	content: "";
+	left: 0px;
+	background-image: url(../images/“.svg);
+	background-repeat: no-repeat;
 }
 
 .reviews__item-header {
+	margin: 0;
+	padding: 0;
 	font: Fira Sans;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 24px;
 	letter-spacing: 0.005em;
 	line-height: 40px;
@@ -422,21 +425,11 @@ color: #b8adc8;
 	color: #737274;
 }
 
-.reviews__data {
-	font-style: italic;
-	font-size: 16px;
-	line-height: 30px;
-	color: #737274;
-	margin: 0;
-	padding: 0;
-}
 
 .reviews_text {
 	font-size: 16px;
 	letter-spacing: 0.005em;
 	line-height: 30px;
-	margin: 0;
-	padding: 0;
 }
 
 .reviews__img-wrap {
@@ -467,7 +460,7 @@ color: #b8adc8;
 
 .blog {
 	min-height: 500px;
-	margin-top: 220px;
+	margin-top: 200px;
 	background-image: url(../images/backgroun_pattern.png);
 }
 
@@ -580,25 +573,37 @@ color: #b8adc8;
     background-position: -5px -257px;
 }
 
-.button--blog__link {
-	display: flex;
-	align-items: center;
-}
-
 .button--blog {
-	font: Fira Sans;
+	display: inline-block;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+	font-family: Fira Sans;
 	font-style: 500;
 	font-size: 16px;
 	letter-spacing: 0.005em;
 	color: #510fad;
 }
 
-.button--blog__arrow {
+.button--blog:hover {
+	color: #737274;
+}
+
+.button--blog::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	right: 60px;
 	width: 20px;
     height: 14px;
     background-position: -5px -29px;
 }
 
+.button--blog:hover .button--blog::after {
+	width: 20px;
+    height: 14px;
+    background-position: -5px -5px;
+}
 
 .contacts {
 	display: flex;
@@ -621,7 +626,7 @@ color: #b8adc8;
 
 .contacts__item-header {
 	margin: 0;
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 600;
 	font-size: 14px;
 	letter-spacing: 0.005em;
@@ -668,7 +673,7 @@ color: #b8adc8;
 }
 
 .nav-footer__link {
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 700;
 	font-size: 16px;
     text-decoration: none;
