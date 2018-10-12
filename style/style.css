@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 500;
 	font-size: 24px;
 	letter-spacing: 0.005em;
@@ -220,7 +220,7 @@ address {
 
 
 .about__desc {
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 	letter-spacing: 0.005em;
 	line-height: 30px;
@@ -247,11 +247,10 @@ address {
 }
 
 .button--video {
-	position: absolute;
 	top: 50px;
 	left: 24px;
-	font: Fira Sans;
-	font-weight: 500;
+	font-family: Fira Sans;
+	font-weight: 400;
 	font-size: 16px;	
 	color: #ffec00;
 }
@@ -279,10 +278,10 @@ address {
     background-position: -5px -53px;
 }
 
-.button--video:hover .button--video::after {
+.button--video:hover:after {
 	width: 20px;
     height: 14px;
-    background-position: -5px -53px;
+    background-position: -5px -5px;
 }
 
 
@@ -296,7 +295,7 @@ address {
 }
 
 .breeds__header {
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-weight: 500;
 	font-size: 36px;
 	letter-spacing: 0.005em;
@@ -374,7 +373,7 @@ address {
     background-position: -5px -29px;
 }
 
-.button--breeds:hover .button--breeds::after {
+.button--breeds:hover:after{
 	width: 20px;
     height: 14px;
     background-position: -5px -5px;
@@ -581,7 +580,7 @@ address {
 	padding-left: 10px;
 	padding-bottom: 10px;
 	margin: 0;
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 500;
 	font-size: 16px;
 	letter-spacing: 0.005em;
@@ -629,7 +628,7 @@ address {
 
 .contacts__item-header {
 	margin: 0;
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 600;
 	font-size: 14px;
 	letter-spacing: 0.005em;
@@ -676,7 +675,7 @@ address {
 }
 
 .nav-footer__link {
-	font: Fira Sans;
+	font-family: Fira Sans;
 	font-style: 700;
 	font-size: 16px;
     text-decoration: none;
