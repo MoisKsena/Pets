@@ -247,20 +247,17 @@ address {
 }
 
 .button--video {
+	position: absolute;
+	top: 50px;
+	left: 24px;
 	font: Fira Sans;
 	font-weight: 500;
 	font-size: 16px;	
 	color: #ffec00;
 }
 
-.button--video{
-	position: absolute;
-	top: 50px;
-	left: 24px;
-}
-
 .button--video:hover {
-color: #b8adc8;
+	color: #b8adc8;
 }
 
 .button::after,
@@ -287,6 +284,7 @@ color: #b8adc8;
     height: 14px;
     background-position: -5px -53px;
 }
+
 
 .breeds {
 	padding: 130px 0 100px 0;
@@ -383,11 +381,13 @@ color: #b8adc8;
 }
 
 .reviews {
-	margin: 0;
+	margin-top: 30px;
 	padding: 0;
 }
 
 .reviews__header {
+	margin-top: 0;
+	padding: 0;
 	font: Fira Sans;
 	font-weight: 500;
 	font-size: 36px;
@@ -400,12 +400,19 @@ color: #b8adc8;
 .reviews__item {
 	display: flex;
 	flex-flow: row nowrap;
-	padding-top: 75px;
+	margin-top: 20px;
+	padding-top: 80px;
+	content: "";
+	left: 0px;
+	background-image: url(../images/“.svg);
+	background-repeat: no-repeat;
 }
 
 .reviews__item-header {
+	margin: 0;
+	padding: 0;
 	font: Fira Sans;
-	font-weight: 500;
+	font-weight: 700;
 	font-size: 24px;
 	letter-spacing: 0.005em;
 	line-height: 40px;
@@ -421,21 +428,11 @@ color: #b8adc8;
 	color: #737274;
 }
 
-.reviews__data {
-	font-style: italic;
-	font-size: 16px;
-	line-height: 30px;
-	color: #737274;
-	margin: 0;
-	padding: 0;
-}
 
 .reviews_text {
 	font-size: 16px;
 	letter-spacing: 0.005em;
 	line-height: 30px;
-	margin: 0;
-	padding: 0;
 }
 
 .reviews__img-wrap {
